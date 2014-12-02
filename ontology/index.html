@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../img/lope.ico">
+
+    <title>CWN editr</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+
+    <!-- Jit -->
+    <link type="text/css" href="../css/base.css" rel="stylesheet" />
+    <link type="text/css" href="../css/Spacetree.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="data.json"></script>
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body onload="init();">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CWN <span class="label label-default">editr</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">APIs</a></li>
+            <li><a href="#">Help</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">?? <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Editing history</a></li>
+                <li class="divider"></li>
+                <li><a href="signin/logout.php">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">總覽 (Overview)</a></li>
+            <li><a href="#">單詞 (Words)</a></li>
+            <li><a href="#">同義詞集 (Synsets)</a></li>
+            <li><a href="relations/">語意關係 (Relations)</a></li>
+            <li><a href="#">匯出 (Export)</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">知識本體 (Ontology)</h1>
+            <div id="container">
+              <div id="left-container">
+
+
+              <div id="id-list"></div>
+
+
+              <div style="text-align:center;"><a href="example2.js">See the Example Code</a></div>            
+              </div>
+
+              <div id="center-container">
+                  <div id="infovis"></div>    
+              </div>
+
+              <div id="right-container">
+
+              <h4>Change Tree Orientation</h4>
+              <table>
+                  <tr>
+                      <td>
+                          <label for="r-left">left </label>
+                      </td>
+                      <td>
+                          <input type="radio" id="r-left" name="orientation" checked="checked" value="left" />
+                      </td>
+                  </tr>
+                  <tr>
+                       <td>
+                          <label for="r-top">top </label>
+                       </td>
+                       <td>
+                          <input type="radio" id="r-top" name="orientation" value="top" />
+                       </td>
+                  <tr>
+                       <td>
+                          <label for="r-bottom">bottom </label>
+                        </td>
+                        <td>
+                          <input type="radio" id="r-bottom" name="orientation" value="bottom" />
+                        </td>
+                  </tr>
+                  <tr>
+                        <td>
+                          <label for="r-right">right </label>
+                        </td> 
+                        <td> 
+                         <input type="radio" id="r-right" name="orientation" value="right" />
+                        </td>
+                  </tr>
+              </table>
+
+              </div>
+
+              <div id="log"></div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- JIT Library File -->
+    <script language="javascript" type="text/javascript" src="../js/jit-yc.js"></script>
+    <!-- Example File -->
+    <script language="javascript" type="text/javascript" src="../js/example2.js"></script>
+
+    <script>
+
+    </script>
+
+
+  </body>
+</html>
